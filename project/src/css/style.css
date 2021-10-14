@@ -476,7 +476,7 @@ progress {
   width: 100px;
   font-size: 18px;
   text-align: center;
-  margin: 0 5px;
+  padding: 0 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -532,23 +532,6 @@ progress {
   position: relative;
 }
 
-.header-inner .header-logo::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 5px;
-  width: 0%;
-  height: 2px;
-  background-color: #eff;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.header-inner .header-logo:hover::after {
-  width: 100%;
-}
-
 .header-inner .header-logo a {
   color: #eff;
 }
@@ -565,14 +548,14 @@ progress {
   width: 100px;
   font-size: 18px;
   text-align: center;
-  margin: 0 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  padding: 0 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .header-inner .header-nav .nav-list .list-item:hover {
   opacity: 0.8;
-  border-bottom: 2px solid #eff;
+  background-color: #eff;
 }
 
 .header-inner .header-nav .nav-list .list-item .item-btn {
@@ -584,7 +567,7 @@ progress {
   transition: all 0.4s;
 }
 
-.header-inner .header-nav .nav-list .list-item .item-btn.change {
+.header-inner .header-nav .nav-list .list-item .item-btn:hover {
   color: #111;
 }
 
@@ -919,7 +902,6 @@ progress {
 .mypage-wrapper .acount-inner .acount-data {
   position: absolute;
   top: 75%;
-  left: 25%;
   max-width: 700px;
   width: 100%;
   display: -webkit-box;
