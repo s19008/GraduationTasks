@@ -35,7 +35,7 @@ $login_user = $_SESSION['login_user'];
         <ul class="nav-list">
           <li class="list-item"><a class="item-btn" href="search.php">検索</a></li>
           <!-- /.list-item -->
-          <li class="list-item"><a class="item-btn" href="post.php">投稿</a></li>
+          <li class="list-item"><a class="item-btn" href="blog_home.php">投稿</a></li>
           <!-- /.list-item -->
           <li class="list-item"><a class="item-btn" href="mypage.php">マイページ</a></li>
           <!-- /.list-item -->
