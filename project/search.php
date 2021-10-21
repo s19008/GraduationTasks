@@ -12,7 +12,7 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <h1 class="header-logo"><a href="index.php">ひまッチ</a></h1>
+      <h1 class="header-logo"><a href="login_home.php">ひまッチ</a></h1>
       <!-- /.header-logo -->
       <nav class="header-nav">
         <ul class="nav-list">
@@ -21,7 +21,7 @@
           </li>
           <!-- /.list-item -->
           <li class="list-item">
-            <a class="item-btn" href="post.php">投稿</a>
+            <a class="item-btn" href="blog/blog_home.php">投稿</a>
           </li>
           <!-- /.list-item -->
           <li class="list-item">

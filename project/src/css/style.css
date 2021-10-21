@@ -549,8 +549,8 @@ progress {
   font-size: 18px;
   text-align: center;
   padding: 0 5px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header-inner .header-nav .nav-list .list-item:hover {
@@ -845,7 +845,7 @@ progress {
   margin: 150px auto 0 auto;
   padding: 50px;
   text-align: center;
-  background-color: #ffa500;
+  background-color: #5a5a5a;
   border-radius: 10px;
   -webkit-filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.6));
           filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.6));
@@ -888,53 +888,52 @@ progress {
 
 .mypage-wrapper {
   width: 100%;
-  height: 800px;
+  background-color: #ddd;
 }
 
 .mypage-wrapper .acount-inner {
+  max-width: 900px;
   width: 100%;
-  height: 300px;
-  background-color: antiquewhite;
-  padding-top: 70px;
+  margin: 0 auto;
+  padding-top: 150px;
 }
 
 .mypage-wrapper .acount-inner .acount-data {
-  position: relative;
-  top: 150px;
-  max-width: 700px;
+  max-width: 300px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 20px;
+  margin: 10px;
+  color: #fff;
+  vertical-align: top;
+  background-color: #5a5a5a;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .mypage-wrapper .acount-inner .acount-data-icon {
   width: 160px;
   height: 160px;
+  margin: 40px auto;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
+  border: 3px solid #ddd;
 }
 
 .mypage-wrapper .acount-inner .acount-data-text {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px;
+  text-align: center;
 }
 
 .mypage-wrapper .acount-inner .acount-data-text-name {
-  font-size: 30px;
-  font-weight: normal;
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: 游ゴシック;
+  font-weight: bold;
+}
+
+.mypage-wrapper .acount-inner .acount-data-favorite {
+  font-family: "icomoon";
+  font-weight: bold;
 }
 
 .recommend {

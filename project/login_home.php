@@ -11,9 +11,6 @@ require_once './login/classes/UserLogic.php';
 
 $err = $_SESSION;
 
-$_SESSION = array();
-session_destroy();
-
 $result = UserLogic::checkLogin();
 
 ?>
@@ -34,7 +31,18 @@ $result = UserLogic::checkLogin();
     <div class="top-header-inner">
       <h1 class="top-header-logo"><a class="top-logo-text" href="#">ひまッチ</a></h1>
       <!-- /.header-logo -->
-
+      <nav class="top-header-nav">
+        <ul class="top-nav-list">
+          <li class="top-list-item"><a class="item-btn" href="search.php">検索</a></li>
+          <!-- /.list-item -->
+          <li class="top-list-item"><a class="item-btn" href="blog/blog_home.php">投稿</a></li>
+          <!-- /.list-item -->
+          <li class="top-list-item"><a class="item-btn" href="mypage.php">マイページ</a></li>
+          <!-- /.list-item -->
+        </ul>
+        <!-- /.nav-list -->
+      </nav>
+      <!-- /.header-nav -->
     </div>
     <!-- /.header-inner -->
   </header>
@@ -47,7 +55,7 @@ $result = UserLogic::checkLogin();
         </h2>
         <p class="main-visual-text">ひまッチ</p>
         <!-- /.main-visual-text -->
-        <a class="main-visual-btn" id="modal-btn">さっそく探してみる</a><!-- /.main-visual-btn -->
+        <a href="search.html" class="main-visual-btn">さっそく探してみる</a><!-- /.main-visual-btn -->
       </div>
       <!-- /.main-visual-wrapper -->
     </div>
@@ -59,7 +67,7 @@ $result = UserLogic::checkLogin();
         <h2 class="section-title">Login</h2>
         <!-- /.section title -->
         <div class="modal-box">
-          <form action="./login/login.php" class="login-form" method="POST">
+          <form action="./login.php" class="login-form" method="POST">
             <a id="close-btn" class="close-btn modal-close">×</a><!-- /.close-btn -->
             <input id="email" type="text" name="email" placeholder="メールアドレス" />
             <?php if (isset($err['email'])) : ?>
@@ -79,7 +87,7 @@ $result = UserLogic::checkLogin();
             <button class="submit" type="submit" id="login-button">
               Login
             </button>
-            <p class="register-link"><a href="./login/signup.php">新規登録</a></p>
+            <p class="register-link"><a href="./signup.php">新規登録</a></p>
             <!-- /.register-link -->
           </form>
           <!-- /.login-form -->

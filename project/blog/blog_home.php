@@ -19,10 +19,37 @@ function h($s)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
     <title>ブログ一覧</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="header-logo"><a href="login_home.php">ひまッチ</a></h1>
+            <!-- /.header-logo -->
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="list-item">
+                        <a class="item-btn" href="search.php">検索</a>
+                    </li>
+                    <!-- /.list-item -->
+                    <li class="list-item">
+                        <a class="item-btn" href="blog/blog_home.php">投稿</a>
+                    </li>
+                    <!-- /.list-item -->
+                    <li class="list-item">
+                        <a class="item-btn" href="../mypage.php">マイページ</a>
+                    </li>
+                    <!-- /.list-item -->
+                </ul>
+                <!-- /.nav-list -->
+            </nav>
+            <!-- /.header-nav -->
+        </div>
+        <!-- /.header-inner -->
+    </header>
+    <!-- /.header -->
     <h2>ブログ一覧</h2>
     <p><a href="./blog_form.html">新規作成</a></p>
     <table>

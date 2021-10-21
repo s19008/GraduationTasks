@@ -35,15 +35,15 @@ if (!$result) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="../src/css/style.css">
   <title>ログイン完了</title>
 </head>
 
 <body>
   <div class="login-wrapper">
     <h2 class="login-wrapper-title">ログインしました！</h2><!-- /.login-wrapper-text -->
-    <a class="login-wrapper-mypage" href="mypage.php">マイページへ</a>
-    <a class="login-wrapper-home" href="index.php">ホーム画面に戻る</a>
+    <a class="login-wrapper-mypage" href="../mypage.php">マイページへ</a>
+    <a class="login-wrapper-home" href="../login_home.php">ホーム画面に戻る</a>
   </div><!-- /.login-wrapper -->
 </body>
 

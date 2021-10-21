@@ -21,7 +21,7 @@ unset($_SESSION['login_err']);
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/style.css" />
   <title>ひまッチ ― 新規登録</title>
 </head>
 
@@ -30,18 +30,6 @@ unset($_SESSION['login_err']);
     <div class="header-inner">
       <h1 class="header-logo"><a href="index.php">ひまッチ</a></h1>
       <!-- /.header-logo -->
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li class="list-item"><a class="item-btn" href="search.php">検索</a></li>
-          <!-- /.list-item -->
-          <li class="list-item"><a class="item-btn" href="post.php">投稿</a></li>
-          <!-- /.list-item -->
-          <li class="list-item"><a class="item-btn" href="mypage.php">マイページ</a></li>
-          <!-- /.list-item -->
-        </ul>
-        <!-- /.nav-list -->
-      </nav>
-      <!-- /.header-nav -->
     </div>
     <!-- /.header-inner -->
   </header>
@@ -98,7 +86,7 @@ unset($_SESSION['login_err']);
       <input type="submit" value="登録">
     </form>
     <!-- /.form -->
-    <a href="index.php">ホームに戻る</a>
+    <a href="../index.php">ホームに戻る</a>
   </div>
   <!-- /.register-main -->
   <script text="javascript" src="src/js/script.js"></script>

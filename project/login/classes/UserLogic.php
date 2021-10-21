@@ -1,6 +1,6 @@
 <?php
 
-require_once '/xampp/htdocs/project/dbconnect.php';
+require_once '/xampp/htdocs/project/login/dbconnect.php';
 
 class UserLogic
 {
@@ -13,7 +13,7 @@ class UserLogic
   {
     $result = false;
 
-    $sql ='INSERT INTO users (name, email, password) VALUES (?, ?, ?)';
+    $sql = 'INSERT INTO users (name, email, password) VALUES (?, ?, ?)';
 
     // ユーザデータを配列に入れる
     $arr = [];
@@ -25,7 +25,7 @@ class UserLogic
       $stmt = connect()->prepare($sql);
       $result = $stmt->execute($arr);
       return $result;
-    } catch(\Exception $e) {
+    } catch (\Exception $e) {
       echo $e; // エラーを出力
       error_log($e, 3, '../error.log'); //ログを出力
       return $result;
@@ -85,7 +85,7 @@ class UserLogic
       // SQLの結果を返す
       $user = $stmt->fetch();
       return $user;
-    } catch(\Exception $e) {
+    } catch (\Exception $e) {
       return false;
     }
   }
@@ -98,14 +98,13 @@ class UserLogic
   public static function checkLogin()
   {
     $result = false;
-    
+
     // セッションにログインユーザが入っていなかったらfalse
     if (isset($_SESSION['login_user']) && $_SESSION['login_user']['id'] > 0) {
       return $result = true;
     }
 
     return $result;
-
   }
 
   /**
@@ -116,5 +115,4 @@ class UserLogic
     $_SESSION = array();
     session_destroy();
   }
-
 }
