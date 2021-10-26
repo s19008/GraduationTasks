@@ -55,7 +55,7 @@ $result = UserLogic::checkLogin();
         </h2>
         <p class="main-visual-text">ひまッチ</p>
         <!-- /.main-visual-text -->
-        <a href="search.html" class="main-visual-btn">さっそく探してみる</a><!-- /.main-visual-btn -->
+        <a href="search.php" class="main-visual-btn">さっそく探してみる</a><!-- /.main-visual-btn -->
       </div>
       <!-- /.main-visual-wrapper -->
     </div>

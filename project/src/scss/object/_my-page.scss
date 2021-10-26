@@ -1,11 +1,25 @@
 .mypage-wrapper {
     width: 100%;
+    height: 100vh;
     background-color: #ddd;
     .acount-inner {
-        max-width: 900px;
+        max-width: 1000px;
         width: 100%;
         margin: 0 auto;
         padding-top: 150px;
+        display: flex;
+        .left-container {
+            max-width: 300px;
+            width: 100%;
+            margin: 20px 15px;
+        }
+        .middle-container {
+            max-width: 300px;
+            width: 100%;
+            margin: 20px 15px;
+        }
+        .right-container {
+        }
         .acount-data {
             max-width: 300px;
             width: 100%;
@@ -14,12 +28,12 @@
             color: #fff;
             vertical-align: top;
             background-color: #5a5a5a;
-            border-radius: 10px;
+            border-radius: 7px;
             display: inline-block;
             &-icon {
                 width: 160px;
                 height: 160px;
-                margin: 40px auto;
+                margin: 0 auto 40px auto;
                 border-radius: 50%;
                 background-size: cover;
                 background-position: center;
@@ -28,18 +42,29 @@
             &-text {
                 text-align: center;
                 &-name {
-                    margin-top: 10px;
                     font-size: 25px;
                     font-family: 游ゴシック;
                     font-weight: bold;
                 }
             }
-            &-favorite {
+            &-title {
                 font-family: "icomoon";
                 font-weight: bold;
+                text-align: center;
             }
             &-list {
+                li {
+                }
             }
         }
+    }
+}
+.logout-form {
+    background-color: #ddd;
+    text-align: center;
+    input {
+        margin-right: 20px;
+    }
+    a {
     }
 }

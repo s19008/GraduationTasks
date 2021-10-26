@@ -49,23 +49,29 @@ $login_user = $_SESSION['login_user'];
   <!-- /.header -->
   <section class="mypage-wrapper">
     <div class="acount-inner">
-      <div class="acount-data">
-        <h3 class="acount-data-favorite">Favorite</h3><!-- /.acount-data-text-favorite -->
-        <ul class="acount-data-list">
-          <li>サッカー</li>
-          <li>ゲーム</li>
-        </ul><!-- /.acount-data-text-favorite -->
-      </div><!-- /.acount-favorite -->
-      <div class="acount-data">
-        <div class="acount-data-icon" style="background-image:url('src/image/football-3471402_1920.jpg');">
-        </div><!-- /.acount-inner-icon -->
-        <div class="acount-data-text">
-          <h2 class="acount-data-text-name"><?php echo h($login_user['name']) ?></h2><!-- /.acount-data-name -->
-        </div><!-- /.acount-data-text -->
-      </div><!-- /.acount-data -->
+      <div class="left-container">
+        <div class="acount-data">
+          <h3 class="acount-data-title">Favorite</h3><!-- /.acount-data-text-favorite -->
+          <ul class="acount-data-list">
+            <li>サッカー</li>
+            <li>ゲーム</li>
+          </ul><!-- /.acount-data-text-favorite -->
+        </div><!-- /.acount-favorite -->
+      </div><!-- /.left-container -->
+      <div class="middle-container">
+        <div class="acount-data">
+          <div class="acount-data-icon" style="background-image:url('src/image/football-3471402_1920.jpg');">
+          </div><!-- /.acount-inner-icon -->
+          <div class="acount-data-text">
+            <h2 class="acount-data-text-name"><?php echo h($login_user['name']) ?></h2><!-- /.acount-data-name -->
+          </div><!-- /.acount-data-text -->
+        </div><!-- /.acount-data -->
+      </div><!-- /.middle-container -->
+      <div class="right-container"></div><!-- /.right-container -->
     </div><!-- /.acount-inner -->
+
   </section><!-- /.my-page-wrapper -->
-  <form action="./logout.php" method="POST">
+  <form class="logout-form" action="./logout.php" method="POST">
     <input type="submit" name="logout" value="ログアウト" />
     <a href="login_home.php">ホームに戻る</a>
   </form>

@@ -888,14 +888,31 @@ progress {
 
 .mypage-wrapper {
   width: 100%;
+  height: 100vh;
   background-color: #ddd;
 }
 
 .mypage-wrapper .acount-inner {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   padding-top: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mypage-wrapper .acount-inner .left-container {
+  max-width: 300px;
+  width: 100%;
+  margin: 20px 15px;
+}
+
+.mypage-wrapper .acount-inner .middle-container {
+  max-width: 300px;
+  width: 100%;
+  margin: 20px 15px;
 }
 
 .mypage-wrapper .acount-inner .acount-data {
@@ -906,14 +923,14 @@ progress {
   color: #fff;
   vertical-align: top;
   background-color: #5a5a5a;
-  border-radius: 10px;
+  border-radius: 7px;
   display: inline-block;
 }
 
 .mypage-wrapper .acount-inner .acount-data-icon {
   width: 160px;
   height: 160px;
-  margin: 40px auto;
+  margin: 0 auto 40px auto;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -925,15 +942,24 @@ progress {
 }
 
 .mypage-wrapper .acount-inner .acount-data-text-name {
-  margin-top: 10px;
   font-size: 25px;
   font-family: 游ゴシック;
   font-weight: bold;
 }
 
-.mypage-wrapper .acount-inner .acount-data-favorite {
+.mypage-wrapper .acount-inner .acount-data-title {
   font-family: "icomoon";
   font-weight: bold;
+  text-align: center;
+}
+
+.logout-form {
+  background-color: #ddd;
+  text-align: center;
+}
+
+.logout-form input {
+  margin-right: 20px;
 }
 
 .recommend {
