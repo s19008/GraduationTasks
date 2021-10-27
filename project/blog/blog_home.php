@@ -31,7 +31,7 @@ function h($s)
             <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="list-item">
-                        <a class="item-btn" href="search.php">検索</a>
+                        <a class="item-btn" href="../search.php">検索</a>
                     </li>
                     <!-- /.list-item -->
                     <li class="list-item">

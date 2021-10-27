@@ -893,7 +893,7 @@ progress {
 }
 
 .mypage-wrapper .acount-inner {
-  max-width: 1000px;
+  max-width: 950px;
   width: 100%;
   margin: 0 auto;
   padding-top: 150px;
@@ -901,36 +901,72 @@ progress {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mypage-wrapper .acount-inner .left-container {
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
   margin: 20px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mypage-wrapper .acount-inner .middle-container {
   max-width: 300px;
   width: 100%;
   margin: 20px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mypage-wrapper .acount-inner .right-container {
+  max-width: 300px;
+  width: 100%;
+  margin: 20px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mypage-wrapper .acount-inner .acount-data {
-  max-width: 300px;
   width: 100%;
-  padding: 20px;
-  margin: 10px;
   color: #fff;
-  vertical-align: top;
   background-color: #5a5a5a;
   border-radius: 7px;
-  display: inline-block;
 }
 
 .mypage-wrapper .acount-inner .acount-data-icon {
   width: 160px;
   height: 160px;
-  margin: 0 auto 40px auto;
+  margin: 40px auto;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -938,19 +974,58 @@ progress {
 }
 
 .mypage-wrapper .acount-inner .acount-data-text {
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto 10px auto;
   text-align: center;
 }
 
 .mypage-wrapper .acount-inner .acount-data-text-name {
-  font-size: 25px;
+  font-size: 23px;
   font-family: 游ゴシック;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mypage-wrapper .acount-inner .acount-data-text-intro {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.mypage-wrapper .acount-inner .acount-data-text-age {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .mypage-wrapper .acount-inner .acount-data-title {
+  font-size: 22px;
+  padding: 10px 0;
   font-family: "icomoon";
   font-weight: bold;
   text-align: center;
+  background-color: #11acbc;
+  border-radius: 5px 5px 0 0;
+}
+
+.mypage-wrapper .acount-inner .acount-data-list {
+  background-color: #5a5a5a;
+  border-radius: 0 0 5px 5px;
+}
+
+.mypage-wrapper .acount-inner .acount-data-list li {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 0 15px 10px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.mypage-wrapper .acount-inner .acount-data-list li:hover {
+  opacity: 0.8;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .logout-form {

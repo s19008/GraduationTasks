@@ -55,6 +55,8 @@ $login_user = $_SESSION['login_user'];
           <ul class="acount-data-list">
             <li>サッカー</li>
             <li>ゲーム</li>
+            <li>ボウリング</li>
+            <li>バスケ</li>
           </ul><!-- /.acount-data-text-favorite -->
         </div><!-- /.acount-favorite -->
       </div><!-- /.left-container -->
@@ -64,10 +66,16 @@ $login_user = $_SESSION['login_user'];
           </div><!-- /.acount-inner-icon -->
           <div class="acount-data-text">
             <h2 class="acount-data-text-name"><?php echo h($login_user['name']) ?></h2><!-- /.acount-data-name -->
+            <p class="acount-data-text-intro">よろしくお願いします</p><!-- /.acount-data-text-intro -->
+            <p class="acount-data-text-age">21</p><!-- /.acount-data-text-age -->
           </div><!-- /.acount-data-text -->
         </div><!-- /.acount-data -->
       </div><!-- /.middle-container -->
-      <div class="right-container"></div><!-- /.right-container -->
+      <div class="right-container">
+        <div class="acount-data">
+
+        </div><!-- /.acount-data -->
+      </div><!-- /.right-container -->
     </div><!-- /.acount-inner -->
 
   </section><!-- /.my-page-wrapper -->
