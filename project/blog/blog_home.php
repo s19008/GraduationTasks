@@ -26,7 +26,7 @@ function h($s)
 <body>
     <header class="header">
         <div class="header-inner">
-            <h1 class="header-logo"><a href="login_home.php">ひまッチ</a></h1>
+            <h1 class="header-logo"><a href="../login_home.php">ひまッチ</a></h1>
             <!-- /.header-logo -->
             <nav class="header-nav">
                 <ul class="nav-list">

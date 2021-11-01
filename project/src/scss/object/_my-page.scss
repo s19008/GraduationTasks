@@ -11,14 +11,14 @@
         align-items: flex-start;
         justify-content: space-between;
         .left-container {
-            max-width: 250px;
+            max-width: 300px;
             width: 100%;
             margin: 20px 15px;
             display: flex;
             flex-direction: column;
         }
         .middle-container {
-            max-width: 300px;
+            max-width: 250px;
             width: 100%;
             margin: 20px 15px;
             display: flex;
@@ -49,6 +49,7 @@
                 max-width: 250px;
                 width: 100%;
                 margin: 0 auto 10px auto;
+                padding: 0 10px;
                 text-align: center;
                 &-name {
                     font-size: 23px;
@@ -60,10 +61,27 @@
                     font-size: 15px;
                     margin-bottom: 20px;
                 }
-                &-age {
-                    font-size: 18px;
-                    font-weight: bold;
-                    text-align: left;
+                &-details {
+                    font-family: "icomoon";
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    li {
+                        max-width: 90px;
+                        width: 100%;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                    .title {
+                        height: 30px;
+                        font-size: 18px;
+                    }
+                    .age {
+                        border-bottom: 2px solid orange;
+                    }
+                    .good {
+                        border-bottom: 2px solid #11acbc;
+                    }
                 }
             }
             &-title {
@@ -85,7 +103,7 @@
                     transition: all 0.1s;
                     &:hover {
                         opacity: 0.8;
-                        border-bottom: 1px solid #fff;
+                        border-bottom: 2px solid #11acbc;
                         transform: translateY(2px);
                     }
                 }

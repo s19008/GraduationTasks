@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
 body {
   color: #111;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
@@ -476,6 +476,7 @@ progress {
   width: 100px;
   font-size: 18px;
   text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
   padding: 0 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -528,7 +529,6 @@ progress {
 .header-inner .header-logo {
   font-size: 30px;
   font-family: "M PLUS Rounded 1c";
-  color: #eff;
   position: relative;
 }
 
@@ -548,6 +548,7 @@ progress {
   width: 100px;
   font-size: 18px;
   text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
   padding: 0 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -604,6 +605,7 @@ progress {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  font-family: "Noto Sans JP", sans-serif;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -617,15 +619,13 @@ progress {
 
 .main-visual-wrapper .main-visual-title {
   color: #eee;
-  font-size: 30px;
-  font-weight: normal;
-  letter-spacing: 3px;
+  font-size: 22px;
+  letter-spacing: 2px;
 }
 
 .main-visual-wrapper .main-visual-text {
   color: #eee;
-  font-size: 30px;
-  font-weight: normal;
+  font-size: 25px;
   margin: 30px 0 100px 0;
 }
 
@@ -912,7 +912,7 @@ progress {
 }
 
 .mypage-wrapper .acount-inner .left-container {
-  max-width: 250px;
+  max-width: 300px;
   width: 100%;
   margin: 20px 15px;
   display: -webkit-box;
@@ -927,7 +927,7 @@ progress {
 }
 
 .mypage-wrapper .acount-inner .middle-container {
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
   margin: 20px 15px;
   display: -webkit-box;
@@ -977,6 +977,7 @@ progress {
   max-width: 250px;
   width: 100%;
   margin: 0 auto 10px auto;
+  padding: 0 10px;
   text-align: center;
 }
 
@@ -992,10 +993,39 @@ progress {
   margin-bottom: 20px;
 }
 
-.mypage-wrapper .acount-inner .acount-data-text-age {
-  font-size: 18px;
+.mypage-wrapper .acount-inner .acount-data-text-details {
+  font-family: "icomoon";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.mypage-wrapper .acount-inner .acount-data-text-details li {
+  max-width: 90px;
+  width: 100%;
   font-weight: bold;
   text-align: left;
+}
+
+.mypage-wrapper .acount-inner .acount-data-text-details .title {
+  height: 30px;
+  font-size: 18px;
+}
+
+.mypage-wrapper .acount-inner .acount-data-text-details .age {
+  border-bottom: 2px solid orange;
+}
+
+.mypage-wrapper .acount-inner .acount-data-text-details .good {
+  border-bottom: 2px solid #11acbc;
 }
 
 .mypage-wrapper .acount-inner .acount-data-title {
@@ -1023,7 +1053,7 @@ progress {
 
 .mypage-wrapper .acount-inner .acount-data-list li:hover {
   opacity: 0.8;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #11acbc;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
@@ -1046,6 +1076,7 @@ progress {
   width: 100%;
   height: 710px;
   text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
   padding-top: 50px;
 }
 
@@ -1056,7 +1087,6 @@ progress {
 }
 
 .about-explanation {
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 20px;
   margin-bottom: 70px;
 }
@@ -1097,8 +1127,55 @@ progress {
 }
 
 .about .contents-wrapper .about-contents-text {
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.about-second {
+  width: 100%;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  padding-top: 50px;
+}
+
+.about-second-title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.about-second-explanation {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+.about-second .contents-wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-second .contents-wrapper .about-second-contents {
+  width: 100%;
+  margin: 20px auto 20px 0;
+}
+
+.about-second .contents-wrapper .about-second-contents-expo-img {
+  max-width: 120px;
+  width: 100%;
+}
+
+.about-second .contents-wrapper .about-second-contents-expo-title {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.about-second .contents-wrapper .about-second-contents-expo-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-second .contents-wrapper .even {
+  margin: 20px 0 20px auto;
 }
 /*# sourceMappingURL=style.css.map */

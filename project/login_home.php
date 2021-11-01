@@ -3,12 +3,6 @@ session_start();
 
 require_once './login/classes/UserLogic.php';
 
-//$result = UserLogic::checkLogin();
-//if($result) {
-//header('Location: mypage.php');
-//return;
-//}
-
 $err = $_SESSION;
 
 $result = UserLogic::checkLogin();
@@ -60,87 +54,66 @@ $result = UserLogic::checkLogin();
       <!-- /.main-visual-wrapper -->
     </div>
     <!-- /.main-visual -->
-    <div id="modal" class="modal">
-      <div class="modal-bg modal-close"></div>
-      <!-- /.modal-bg -->
-      <div class="modal-wrap">
-        <h2 class="section-title">Login</h2>
-        <!-- /.section title -->
-        <div class="modal-box">
-          <form action="./login.php" class="login-form" method="POST">
-            <a id="close-btn" class="close-btn modal-close">×</a><!-- /.close-btn -->
-            <input id="email" type="text" name="email" placeholder="メールアドレス" />
-            <?php if (isset($err['email'])) : ?>
-              <p><?php echo $err['email']; ?></p>
-            <?php endif; ?>
-            <?php if (isset($err['msg'])) : ?>
-              <p><?php echo $err['msg']; ?></p>
-            <?php endif; ?>
-            <input id="password" type="password" name="password" placeholder="パスワード" />
-            <?php if (isset($err['password'])) : ?>
-              <p><?php echo $err['password']; ?></p>
-            <?php endif; ?>
-            <p class="modal-text">
-              <a href="#">パスワードをお忘れですか？</a>
-            </p>
-            <!-- /.modal-text -->
-            <button class="submit" type="submit" id="login-button">
-              Login
-            </button>
-            <p class="register-link"><a href="./signup.php">新規登録</a></p>
-            <!-- /.register-link -->
-          </form>
-          <!-- /.login-form -->
-        </div>
-        <!-- /.modal-box -->
-      </div>
-      <!-- /.modal-wrap -->
-    </div>
-    <!-- /.modal -->
-    <section class="about">
+    <section class="about-second">
       <p class="section-category">About</p>
       <!-- /.section-category -->
-      <h2 class="about-title">ひまッチ とは</h2>
+      <h2 class="about-second-title">ひまッチ とは</h2>
       <!-- /.section-title -->
-      <p class="about-explanation">
+      <p class="about-second-explanation">
         暇ができた時や、同じ趣味の友達が欲しいとき<br />条件に合った"遊びの"コミュニティを探すことができます。
       </p>
       <!-- /.about-explanation -->
+      <h3 class="about-second-step"></h3><!-- /.about-second-step -->
       <div class="contents-wrapper">
-        <div class="about-contents">
-          <img src="src/image/1055031_magnifying_search_view_icon.svg" alt="探すイメージ画像" class="about-contents-img" />
-          <h3 class="about-contents-title">コミュニティを探す</h3>
-          <!-- /.about-contents-title -->
-          <p class="about-contents-text">
-            自分の希望にあった遊びを検索して探せます。
-          </p>
-          <!-- /.about-contents-text -->
+        <div class="about-second-contents">
+          <div class="about-second-contents-expo">
+            <img src="src/image/1055031_magnifying_search_view_icon.svg" alt="探すイメージ画像" class="about-second-contents-expo-img" />
+            <h3 class="about-second-contents-expo-title">コミュニティを探す</h3>
+            <!-- /.about-contents-title -->
+            <p class="about-second-contents-expo-text">
+              自分の希望にあった遊びを検索して探せます。
+            </p>
+            <!-- /.about-contents-text -->
+          </div><!-- /.about-second-contents-expo -->
+          <div class="about-secont-contents-link"></div><!-- /.about-secont-contents-link -->
         </div>
         <!-- /.about-contents -->
-        <div class="about-contents">
-          <img src="src/image/3209296_address_home_homepage_house_resient_icon.svg" alt="作るイメージ画像" class="about-contents-img" />
-          <h3 class="about-contents-title">コミュニティを作る</h3>
-          <!-- /.about-contents-title -->
-          <p class="about-contents-text">
-            自分がホストとなって遊びのコミュニティを作ることができます。
-          </p>
-          <!-- /.about-contents-text -->
+        <div class="about-second-contents even">
+          <div class="about-second-contents-expo">
+            <img src="src/image/3209296_address_home_homepage_house_resient_icon.svg" alt="作るイメージ画像" class="about-second-contents-expo-img" />
+            <h3 class="about-second-contents-expo-title">コミュニティを作る</h3>
+            <!-- /.about-contents-title -->
+            <p class="about-second-contents-expo-text">
+              自分がホストとなって遊びのコミュニティを作ることができます。
+            </p>
+            <!-- /.about-contents-text -->
+          </div><!-- /.about-second-contents-expo -->
+          <div class="about-secont-contents-link"></div><!-- /.about-secont-contents-link -->
         </div>
         <!-- /.about-contents -->
-        <div class="about-contents">
-          <img src="src/image/7659234_sign in_log in_open_join_icon.svg" alt="参加するイメージ画像" class="about-contents-img" />
-          <h3 class="about-contents-title">コミュニティに参加する</h3>
-          <!-- /.about-contents-title -->
-          <p class="about-contents-text">
-            コミュニティ参加後はチャットで遊びの連絡を取り合うことができます。
-          </p>
-          <!-- /.about-contents-text -->
+        <div class="about-second-contents">
+          <div class="about-second-contents-expo">
+            <img src="src/image/7659234_sign in_log in_open_join_icon.svg" alt="参加するイメージ画像" class="about-second-contents-expo-img" />
+            <h3 class="about-second-contents-expo-title">コミュニティに参加する</h3>
+            <!-- /.about-contents-title -->
+            <p class="about-second-contents-expo-text">
+              コミュニティ参加後はチャットで遊びの連絡を取り合うことができます。
+            </p>
+            <!-- /.about-contents-text -->
+          </div><!-- /.about-second-contents-expo -->
+          <div class="about-secont-contents-link"></div><!-- /.about-secont-contents-link -->
         </div>
         <!-- /.about-contents -->
       </div>
       <!-- /.contents-wrapper -->
     </section>
     <!-- /.about -->
+    <section class="example">
+      <h2 class="example-title"></h2><!-- /.example-title -->
+      <div class="example-inner">
+
+      </div><!-- /.example-inner -->
+    </section><!-- /.example -->
   </main>
   <!-- /.main -->
   <footer class="footer">

@@ -51,6 +51,22 @@ $login_user = $_SESSION['login_user'];
     <div class="acount-inner">
       <div class="left-container">
         <div class="acount-data">
+          <div class="acount-data-icon" style="background-image:url('src/image/football-3471402_1920.jpg');">
+          </div><!-- /.acount-inner-icon -->
+          <div class="acount-data-text">
+            <h2 class="acount-data-text-name"><?php echo h($login_user['name']) ?></h2><!-- /.acount-data-name -->
+            <p class="acount-data-text-intro">よろしくお願いします</p><!-- /.acount-data-text-intro -->
+            <ul class="acount-data-text-details">
+              <li class="title">Age</li><!-- /.age -->
+              <li class="title">Good</li><!-- /.good -->
+              <li class="age">21</li>
+              <li class="good">30</li><!-- /.good -->
+            </ul><!-- /.acount-data-text-detail -->
+          </div><!-- /.acount-data-text -->
+        </div><!-- /.acount-data -->
+      </div><!-- /.middle-container -->
+      <div class="middle-container">
+        <div class="acount-data">
           <h3 class="acount-data-title">Favorite</h3><!-- /.acount-data-text-favorite -->
           <ul class="acount-data-list">
             <li>サッカー</li>
@@ -60,17 +76,6 @@ $login_user = $_SESSION['login_user'];
           </ul><!-- /.acount-data-text-favorite -->
         </div><!-- /.acount-favorite -->
       </div><!-- /.left-container -->
-      <div class="middle-container">
-        <div class="acount-data">
-          <div class="acount-data-icon" style="background-image:url('src/image/football-3471402_1920.jpg');">
-          </div><!-- /.acount-inner-icon -->
-          <div class="acount-data-text">
-            <h2 class="acount-data-text-name"><?php echo h($login_user['name']) ?></h2><!-- /.acount-data-name -->
-            <p class="acount-data-text-intro">よろしくお願いします</p><!-- /.acount-data-text-intro -->
-            <p class="acount-data-text-age">21</p><!-- /.acount-data-text-age -->
-          </div><!-- /.acount-data-text -->
-        </div><!-- /.acount-data -->
-      </div><!-- /.middle-container -->
       <div class="right-container">
         <div class="acount-data">
 
@@ -80,8 +85,7 @@ $login_user = $_SESSION['login_user'];
 
   </section><!-- /.my-page-wrapper -->
   <form class="logout-form" action="./logout.php" method="POST">
-    <input type="submit" name="logout" value="ログアウト" />
-    <a href="login_home.php">ホームに戻る</a>
+    <input type="submit" name="logout" value="ログアウトする" />
   </form>
   <script text="javascript" src="src/js/script.js"></script>
 </body>

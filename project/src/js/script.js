@@ -22,6 +22,20 @@ $(function () {
     easing: "swing",
   });
 
+  $(window).scroll(function () {
+    let scroll = $(this).scrollTop();
+    if (scroll > 700) {
+      logo.addClass("change");
+      item_btn.addClass("change");
+    } else {
+      logo.removeClass("change");
+      item_btn.removeClass("change");
+    }
+  });
+
+  if (!modal_btn) {
+    return false;
+  }
   modal_btn.addEventListener("click", () => {
     setTimeout(function () {
       modal.style.opacity = 1;
@@ -40,15 +54,4 @@ $(function () {
       }, ms);
     });
   }
-
-  $(window).scroll(function () {
-    let scroll = $(this).scrollTop();
-    if (scroll > 765) {
-      logo.addClass("change");
-      item_btn.addClass("change");
-    } else {
-      logo.removeClass("change");
-      item_btn.removeClass("change");
-    }
-  });
 });

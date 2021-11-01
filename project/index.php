@@ -34,7 +34,6 @@ $result = UserLogic::checkLogin();
     <div class="top-header-inner">
       <h1 class="top-header-logo"><a class="top-logo-text" href="#">ひまッチ</a></h1>
       <!-- /.header-logo -->
-
     </div>
     <!-- /.header-inner -->
   </header>
