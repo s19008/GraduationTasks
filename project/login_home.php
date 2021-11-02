@@ -67,41 +67,47 @@ $result = UserLogic::checkLogin();
       <div class="contents-wrapper">
         <div class="about-second-contents">
           <div class="about-second-contents-expo">
-            <img src="src/image/1055031_magnifying_search_view_icon.svg" alt="探すイメージ画像" class="about-second-contents-expo-img" />
             <h3 class="about-second-contents-expo-title">コミュニティを探す</h3>
             <!-- /.about-contents-title -->
             <p class="about-second-contents-expo-text">
               自分の希望にあった遊びを検索して探せます。
             </p>
             <!-- /.about-contents-text -->
+            <a href="search.php" class="about-second-contents-expo-btn"></a><!-- /.about-second-contents-expo-btn -->
           </div><!-- /.about-second-contents-expo -->
-          <div class="about-secont-contents-link"></div><!-- /.about-secont-contents-link -->
+          <div class="about-second-contents-visual">
+            <img src="src/image/kylie-lugo-t0BavJY0M-U-unsplash.jpg" alt="探すイメージ画像" class="about-second-contents-visual-img" />
+          </div><!-- /.about-secont-contents-link -->
         </div>
         <!-- /.about-contents -->
         <div class="about-second-contents even">
+          <div class="about-second-contents-visual">
+            <img src="src/image/create-gc4989cf33_1920.jpg" alt="作るイメージ画像" class="about-second-contents-visual-img" />
+          </div><!-- /.about-secont-contents-link -->
           <div class="about-second-contents-expo">
-            <img src="src/image/3209296_address_home_homepage_house_resient_icon.svg" alt="作るイメージ画像" class="about-second-contents-expo-img" />
             <h3 class="about-second-contents-expo-title">コミュニティを作る</h3>
             <!-- /.about-contents-title -->
             <p class="about-second-contents-expo-text">
               自分がホストとなって遊びのコミュニティを作ることができます。
             </p>
             <!-- /.about-contents-text -->
+            <a href="blog/blog_home.php" class="about-second-contents-expo-btn"></a><!-- /.about-second-contents-expo-btn -->
           </div><!-- /.about-second-contents-expo -->
-          <div class="about-secont-contents-link"></div><!-- /.about-secont-contents-link -->
         </div>
         <!-- /.about-contents -->
         <div class="about-second-contents">
           <div class="about-second-contents-expo">
-            <img src="src/image/7659234_sign in_log in_open_join_icon.svg" alt="参加するイメージ画像" class="about-second-contents-expo-img" />
             <h3 class="about-second-contents-expo-title">コミュニティに参加する</h3>
             <!-- /.about-contents-title -->
             <p class="about-second-contents-expo-text">
               コミュニティ参加後はチャットで遊びの連絡を取り合うことができます。
             </p>
             <!-- /.about-contents-text -->
+            <a href="#" class="about-second-contents-expo-btn"></a><!-- /.about-second-contents-expo-btn -->
           </div><!-- /.about-second-contents-expo -->
-          <div class="about-secont-contents-link"></div><!-- /.about-secont-contents-link -->
+          <div class="about-second-contents-visual">
+            <img src="src/image/connect-gcc16a62ec_1280.jpg" alt="参加するイメージ画像" class="about-second-contents-visual-img" />
+          </div><!-- /.about-secont-contents-link -->
         </div>
         <!-- /.about-contents -->
       </div>
