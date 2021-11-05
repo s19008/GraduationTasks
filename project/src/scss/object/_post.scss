@@ -1,4 +1,51 @@
 .post {
+    max-width: 1180px;
     width: 100%;
-    margin-top: 100px;
+    margin: 100px auto 0 auto;
+    padding: 20px;
+    &-title {
+        margin-bottom: 20px;
+    }
+    &-btn {
+        text-align: right;
+        margin-bottom: 20px;
+        a {
+            color: #fff;
+            padding: 10px 20px;
+            font-weight: bold;
+            background-color: aquamarine;
+            border-radius: 5px;
+        }
+    }
+    &-inner {
+        max-width: 1050px;
+        width: 100%;
+        margin: 0 auto;
+        font-family: "Noto Sans JP", sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        &-contents {
+            max-width: 300px;
+            width: 100%;
+            margin: 10px 15px;
+            &-visual {
+                width: 100%;
+                img {
+                    border-radius: 10px;
+                }
+            }
+            &-text {
+                width: 100%;
+                padding: 10px;
+                &-title {
+                }
+                &-category {
+                    margin: 10px 0;
+                }
+                &-time {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }

@@ -877,8 +877,68 @@ progress {
 }
 
 .post {
+  max-width: 1180px;
   width: 100%;
-  margin-top: 100px;
+  margin: 100px auto 0 auto;
+  padding: 20px;
+}
+
+.post-title {
+  margin-bottom: 20px;
+}
+
+.post-btn {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.post-btn a {
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+
+.post-inner {
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.post-inner-contents {
+  max-width: 300px;
+  width: 100%;
+  margin: 10px 15px;
+}
+
+.post-inner-contents-visual {
+  width: 100%;
+}
+
+.post-inner-contents-visual img {
+  border-radius: 10px;
+}
+
+.post-inner-contents-text {
+  width: 100%;
+  padding: 10px;
+}
+
+.post-inner-contents-text-category {
+  margin: 10px 0;
+}
+
+.post-inner-contents-text-time {
+  font-size: 14px;
 }
 
 .search {
@@ -1157,15 +1217,11 @@ progress {
 
 .about-second .contents-wrapper .about-second-contents {
   width: 100%;
-  margin: 40px 0;
+  margin: 60px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .about-second .contents-wrapper .about-second-contents-expo {
@@ -1177,12 +1233,19 @@ progress {
 
 .about-second .contents-wrapper .about-second-contents-expo-title {
   font-size: 25px;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .about-second .contents-wrapper .about-second-contents-expo-text {
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-second .contents-wrapper .about-second-contents-expo-btn {
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
 }
 
 .about-second .contents-wrapper .about-second-contents-visual-img {

@@ -50,25 +50,27 @@ function h($s)
         <!-- /.header-inner -->
     </header>
     <!-- /.header -->
-    <h2>ブログ一覧</h2>
-    <p><a href="./blog_form.html">新規作成</a></p>
-    <table>
-        <tr>
-            <th>タイトル</th>
-            <th>カテゴリ</th>
-            <th>投稿日時</th>
-        </tr>
-        <?php foreach ($blogData as $column) : ?>
-            <tr>
-                <td><?php echo h($column['title']) ?></td>
-                <td><?php echo h($blog->setCategoryName($column['category'])) ?></td>
-                <td><?php echo h($column['post_at']) ?></td>
-                <td><a href="./detail.php?id=<?php echo $column['id'] ?> ">詳細</a></td>
-                <td><a href="./update_form.php?id=<?php echo $column['id'] ?> ">編集</a></td>
-                <td><a href="./blog_delete.php?id=<?php echo $column['id'] ?> ">削除</a></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
+    <section class="post">
+        <h2 class="post-title">話題のチャットルーム一覧</h2>
+        <div class="post-btn"><a href="./blog_form.html">新規作成</a></div><!-- /.post-btn -->
+        <div class="post-inner">
+            <?php foreach ($blogData as $column) : ?>
+                <div class="post-inner-contents">
+                    <div class="post-inner-contents-visual">
+                        <img src="../src/image/create-gc4989cf33_1920.jpg" alt="イメージ画像">
+                    </div><!-- /.post-inner-contents-visual -->
+                    <div class="post-inner-contents-text">
+                        <h2 class="post-inner-contents-text-title"><?php echo h($column['title']) ?></h2>
+                        <p class="post-inner-contents-text-category"><?php echo h($blog->setCategoryName($column['category'])) ?></p>
+                        <p class="post-inner-contents-text-time"><?php echo h($column['post_at']) ?></p>
+                    </div><!-- /.post-inner-contents-text -->
+                </div><!-- /.post-inner-contents -->
+            <?php endforeach; ?>
+        </div>
+        <a href="./detail.php?id=<?php echo $column['id'] ?> ">詳細</a>
+        <a href="./update_form.php?id=<?php echo $column['id'] ?> ">編集</a>
+        <a href="./blog_delete.php?id=<?php echo $column['id'] ?> ">削除</a>
+    </section><!-- /.post -->
 </body>
 
 </html>
