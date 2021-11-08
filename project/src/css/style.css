@@ -635,6 +635,7 @@ progress {
   padding: 10px 20px;
   border: 2px solid #fff;
   border-radius: 10px;
+  cursor: pointer;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -1293,5 +1294,131 @@ progress {
 
 .about-second .contents-wrapper .even .about-second-contents-expo {
   margin: 0 0 0 auto;
+}
+
+.chat {
+  width: 100%;
+  height: 100vh;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #ccc;
+  padding-top: 30px;
+}
+
+.chat-title {
+  margin: 30px 250px;
+}
+
+.chat-form {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+
+.chat-form-title .room-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.chat-form-title input {
+  max-width: 400px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+.chat-form-title .room-content {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.chat-form-title textarea {
+  max-width: 400px;
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  resize: none;
+}
+
+.chat-form-category {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chat-form-category .room-category {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chat-form-category .category-select {
+  font-size: 16px;
+  padding: 7px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+.chat-form-radio {
+  max-width: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #b6b6b6;
+}
+
+.chat-form-radio-btn {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.chat-form-radio-btn input {
+  width: 100%;
+  height: 20px;
+  opacity: 0;
+}
+
+.chat-form-radio-btn label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #b6b6b6;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
