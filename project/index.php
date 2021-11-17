@@ -58,7 +58,7 @@ $result = UserLogic::checkLogin();
         <h2 class="section-title">Login</h2>
         <!-- /.section title -->
         <div class="modal-box">
-          <form action="./login/login.php" class="login-form" method="POST">
+          <form action="login/login.php" class="login-form" method="POST">
             <a id="close-btn" class="close-btn modal-close">×</a><!-- /.close-btn -->
             <input id="email" type="text" name="email" placeholder="メールアドレス" />
             <?php if (isset($err['email'])) : ?>

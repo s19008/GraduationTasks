@@ -2,8 +2,12 @@
 
 //①require_onceを使ってみよう！
 require_once('./blog.php');
+
+require_once("../chat/chat_home.php");
+
 $blog = new Blog;
 $result = $blog->getById($_GET['id']);
+
 
 ?>
 <!DOCTYPE html>
@@ -23,7 +27,16 @@ $result = $blog->getById($_GET['id']);
     <p>カテゴリー:<?php echo $blog->setCategoryName($result['category']) ?></p>
     <hr>
     <p>本文:<?php echo $result['content'] ?></p>
+    <form method="post">
+        名前　　　　<input type="text" name="name">
+        メッセージ　<input type="text" name="message">
+
+        <button name="send" type="submit">送信</button>
+
+        チャット履歴
+    </form>
     <p?><a href="blog_home.php">戻る</a></p>
+
 </body>
 
 </html>

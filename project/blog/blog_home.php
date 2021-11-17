@@ -1,7 +1,12 @@
 <?php
+//session_start();
+//require_once("/xampp/htdocs/project/login/classes/UserLogic.php");
+//require_once("/xampp/htdocs/project/login/functions.php");
+
 require_once('./blog.php');
 // 取得したデータを表示
 
+//$login_user = $_SESSION['login_user'];
 $blog = new Blog();
 $blogData = $blog->getAll();
 
@@ -35,7 +40,7 @@ function h($s)
                     </li>
                     <!-- /.list-item -->
                     <li class="list-item">
-                        <a class="item-btn" href="blog/blog_home.php">投稿</a>
+                        <a class="item-btn" href="blog_home.php">投稿</a>
                     </li>
                     <!-- /.list-item -->
                     <li class="list-item">
@@ -52,10 +57,10 @@ function h($s)
     <!-- /.header -->
     <section class="post">
         <h2 class="post-title">話題のチャットルーム一覧</h2>
-        <div class="post-btn"><a href="./blog_form.html">新規作成</a></div><!-- /.post-btn -->
+        <div class="post-btn"><a href="./blog_form.php">新規作成</a></div><!-- /.post-btn -->
         <div class="post-inner">
             <?php foreach ($blogData as $column) : ?>
-                <a class="post-inner-contents" href="#">
+                <a class="post-inner-contents" href="detail.php?id=<?php echo $column['id'] ?>">
                     <div class="post-inner-contents-visual">
                         <img src="../src/image/create-gc4989cf33_1920.jpg" alt="イメージ画像">
                     </div><!-- /.post-inner-contents-visual -->

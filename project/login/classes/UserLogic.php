@@ -1,6 +1,6 @@
 <?php
 
-require_once '/xampp/htdocs/project/login/dbconnect.php';
+require_once '/xampp/htdocs/project/dbconnect.php';
 
 class UserLogic
 {

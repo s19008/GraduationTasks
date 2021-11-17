@@ -1,5 +1,5 @@
 <?php
-require_once('./env_blog.php');
+require_once('../env.php');
 
 class Dbc
 {
