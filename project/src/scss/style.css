@@ -221,20 +221,20 @@ input {
   cursor: default;
 }
 
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
   /* Correct the cursor style of increment and decrement buttons in Chrome */
 }
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* Correct the odd appearance in Chrome and Safari */
   outline-offset: -2px;
   /* Correct the outline style in Safari */
 }
 
-[type='search']::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
   /* Remove the inner padding in Chrome and Safari on macOS */
 }
@@ -273,28 +273,28 @@ select {
 
 /* Apply cursor pointer to button elements */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'],
-[role='button'] {
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"] {
   cursor: pointer;
   color: inherit;
 }
 
 /* Remove inner padding and border in Firefox 4+ */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 /* Replace focus style removed in the border reset above */
 button:-moz-focusring,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   outline: 1px dotted ButtonText;
 }
 
@@ -381,7 +381,7 @@ progress {
      # Accessibility
      # ================================================================= */
 /* Specify the progress cursor of updating elements */
-[aria-busy='true'] {
+[aria-busy="true"] {
   cursor: progress;
 }
 
@@ -391,7 +391,7 @@ progress {
 }
 
 /* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
-[aria-disabled='true'] {
+[aria-disabled="true"] {
   cursor: default;
 }
 
@@ -1162,11 +1162,6 @@ progress {
   margin-right: 20px;
 }
 
-.recommend {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .about {
   width: 100%;
   height: 710px;
@@ -1305,14 +1300,14 @@ progress {
 }
 
 .chat-title {
-  margin: 30px 250px;
+  margin: 30px 230px;
 }
 
 .chat-form {
   max-width: 700px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px 30px 30px 50px;
+  padding: 30px 80px 30px 50px;
   background-color: #fff;
   color: #000;
   border-radius: 10px;
@@ -1324,7 +1319,7 @@ progress {
 }
 
 .chat-form-title input {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   padding: 5px;
   border: 1px solid #444;
@@ -1338,7 +1333,7 @@ progress {
 }
 
 .chat-form-title textarea {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   height: 200px;
   padding: 5px;
@@ -1350,22 +1345,15 @@ progress {
 }
 
 .chat-form-category {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   margin-bottom: 50px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .chat-form-category .room-category {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .chat-form-category .category-select {
@@ -1375,69 +1363,80 @@ progress {
   border-radius: 5px;
 }
 
-.chat-form-radio {
-  max-width: 250px;
-  width: 100%;
-  height: 45px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 0 auto;
-  overflow: hidden;
-  border-radius: 5px;
-  border: 1px solid #b6b6b6;
+.chat-form .back-btn {
+  font-size: 18px;
 }
 
-.chat-form-radio-btn {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.chat-form-radio-btn input {
-  width: 100%;
-  height: 45px;
-  opacity: 0;
-}
-
-.chat-form-radio-btn input:checked + label {
-  background-color: #d81b60;
+.chat-form .room-create {
+  font-size: 17px;
   font-weight: bold;
+  letter-spacing: 1px;
   color: #fff;
+  margin-left: 400px;
+  background-color: #2ea44f;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
-.chat-form-radio-btn label {
-  position: absolute;
-  top: 0;
-  left: 0;
+.room {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  pointer-events: none;
-  border-right: 1px solid #b6b6b6;
-  border-radius: 5px 0 0 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  height: 100vh;
+  padding-top: 70px;
+  background-color: #eee;
 }
 
-.chat-form-radio-btn:last-child label {
-  border-right: 0;
-  border-radius: 0 5px 5px 0;
+.room-detail {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.room-chat {
+  padding: 30px;
+}
+
+.room-chat-content .chat-line {
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.room-chat-content .chat-line .user-name {
+  margin-bottom: 5px;
+}
+
+.room-chat-content .chat-line .user-text {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.room-chat-content .chat-line .user-time {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.room-form {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  padding: 0 20px;
+  font-family: "Noto Sans JP", Arial, sans-serif;
+}
+
+.room-form-name {
+  width: 150px;
+  font-size: 14px;
+  margin-right: 30px;
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+.room-form-message {
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

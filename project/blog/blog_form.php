@@ -25,23 +25,14 @@
         <select class="category-select" name="category">
           <option value="1">日常</option>
           <option value="2">プログラミング</option>
+          <option value="3">スポーツ</option>
+          <option value="4">ゲーム</option>
         </select>
       </div>
       <!-- /.chat-form-category -->
-      <div class="chat-form-radio">
-        <div class="chat-form-radio-btn">
-          <input type="radio" name="publish_status" value="1" checked /><label>公開</label>
-        </div>
-        <!-- /.chat-form-radio-btn -->
-        <div class="chat-form-radio-btn">
-          <input type="radio" name="publish_status" value="2" /><label>非公開</label>
-        </div>
-        <!-- /.chat-form-radio-btn -->
-      </div>
-      <!-- /.chat-form-radio -->
-      <input type="submit" value="送信" />
+      <a class="back-btn" href="blog_home.php">キャンセル</a>
+      <input class="room-create" type="submit" value="作成する" />
     </form>
-    <a href="blog_home.php">戻る</a>
   </section>
   <!-- /.blog-form -->
 </body>
