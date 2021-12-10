@@ -54,10 +54,12 @@ if (count($err) === 0) {
         <?php foreach ($err as $e) : ?>
             <p><?php echo $e ?></p>
         <?php endforeach ?>
+        <a href="signup.php">戻る</a>
     <?php else : ?>
         <p>ユーザー登録が完了しました</p>
+        <a href="../index.php">戻る</a>
     <?php endif ?>
-    <a href="../index.php">戻る</a>
+
 </body>
 
 </html>

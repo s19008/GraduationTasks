@@ -91,7 +91,7 @@ $result = UserLogic::checkLogin();
               自分がホストとなって遊びのコミュニティを作ることができます。
             </p>
             <!-- /.about-contents-text -->
-            <a href="blog/blog_home.php" class="about-second-contents-expo-btn">ホストになる</a><!-- /.about-second-contents-expo-btn -->
+            <a href="blog/blog_form.php" class="about-second-contents-expo-btn">ホストになる</a><!-- /.about-second-contents-expo-btn -->
           </div><!-- /.about-second-contents-expo -->
         </div>
         <!-- /.about-contents -->
@@ -103,7 +103,7 @@ $result = UserLogic::checkLogin();
               コミュニティ参加後はチャットで遊びの連絡を取り合うことができます。
             </p>
             <!-- /.about-contents-text -->
-            <a href="#" class="about-second-contents-expo-btn">参加する</a><!-- /.about-second-contents-expo-btn -->
+            <a href="blog/blog_home.php" class="about-second-contents-expo-btn">参加する</a><!-- /.about-second-contents-expo-btn -->
           </div><!-- /.about-second-contents-expo -->
           <div class="about-second-contents-visual">
             <img src="src/image/connect-gcc16a62ec_1280.jpg" alt="参加するイメージ画像" class="about-second-contents-visual-img" />

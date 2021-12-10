@@ -71,10 +71,6 @@ $result = UserLogic::checkLogin();
             <?php if (isset($err['password'])) : ?>
               <p><?php echo $err['password']; ?></p>
             <?php endif; ?>
-            <p class="modal-text">
-              <a href="#">パスワードをお忘れですか？</a>
-            </p>
-            <!-- /.modal-text -->
             <button class="submit" type="submit" id="login-button">
               Login
             </button>

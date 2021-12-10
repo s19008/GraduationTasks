@@ -1,4 +1,28 @@
 .search {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 70px;
+    &-inner {
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 30px;
+        font-family: "Noto Sans JP", Arial, sans-serif;
+        text-align: center;
+        &-title {
+            text-align: left;
+            h2 {
+            }
+        }
+        .search-form {
+            .form-item {
+                .search-input {
+                    max-width: 700px;
+                    width: 100%;
+                    padding: 10px 20px;
+                    margin: 0 auto;
+                    border: 1px solid #111;
+                }
+            }
+        }
+    }
 }

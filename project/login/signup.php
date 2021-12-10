@@ -86,7 +86,6 @@ unset($_SESSION['login_err']);
       <input type="submit" value="登録">
     </form>
     <!-- /.form -->
-    <a href="../index.php">ホームに戻る</a>
   </div>
   <!-- /.register-main -->
   <script text="javascript" src="src/js/script.js"></script>

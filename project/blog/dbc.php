@@ -67,6 +67,50 @@ class Dbc
         return $result;
     }
 
+    public function getByage($age)
+    {
+        if (empty($age)) {
+            exit('IDが不正です');
+        }
+
+        $dbh = $this->dbConnect();
+
+        //SQL準備
+        $stmt = $dbh->prepare("SELECT * FROM $this->table_name where age = :age");
+        $stmt->bindValue(':age', $age, \PDO::PARAM_INT);
+        //SQL実行
+        $stmt->execute();
+        //結果を取得
+        $result = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+        if (!$result) {
+            exit('ブログがありません');
+        }
+        return $result;
+    }
+
+    public function getBycategory($category)
+    {
+        if (empty($category)) {
+            exit('IDが不正です');
+        }
+
+        $dbh = $this->dbConnect();
+
+        //SQL準備
+        $stmt = $dbh->prepare("SELECT * FROM $this->table_name where category = :category");
+        $stmt->bindValue(':category', $category, \PDO::PARAM_INT);
+        //SQL実行
+        $stmt->execute();
+        //結果を取得
+        $result = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+        if (!$result) {
+            exit('ブログがありません');
+        }
+        return $result;
+    }
+
     public function delete($id)
     {
         if (empty($id)) {

@@ -23,10 +23,21 @@
       <div class="chat-form-category">
         <p class="room-category">カテゴリ</p>
         <select class="category-select" name="category">
-          <option value="1">日常</option>
-          <option value="2">プログラミング</option>
-          <option value="3">スポーツ</option>
-          <option value="4">ゲーム</option>
+          <option value="1">サッカー</option>
+          <option value="2">ボウリング</option>
+          <option value="3">野球</option>
+          <option value="4">テニス</option>
+          <option value="5">ゲーム</option>
+          <option value="6">カラオケ</option>
+        </select>
+        <p>年代</p>
+        <select class="age-select" name="age">
+          <option value="1">10代</option>
+          <option value="2">20代</option>
+          <option value="3">30代</option>
+          <option value="4">40代</option>
+          <option value="5">50代</option>
+          <option value="6">60代以上</option>
         </select>
       </div>
       <!-- /.chat-form-category -->
