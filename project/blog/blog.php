@@ -61,7 +61,7 @@ class Blog extends Dbc
             $stmt->bindValue(':age', $blogs['age'], PDO::PARAM_INT);
             $stmt->execute();
             $dbh->commit();
-            echo 'ブログを投稿しました！';
+            echo '<h2 class="create-text">ブログを投稿しました!</h2>';
         } catch (\PDOException $e) {
             $dbh->rollBack();
             exit($e);

@@ -13,13 +13,15 @@ class UserLogic
   {
     $result = false;
 
-    $sql = 'INSERT INTO users (name, email, password) VALUES (?, ?, ?)';
+    $sql = 'INSERT INTO users (name, email, password, age, sex) VALUES (?, ?, ?, ?, ?)';
 
     // ユーザデータを配列に入れる
     $arr = [];
     $arr[] = $userData['name'];
     $arr[] = $userData['email'];
     $arr[] = password_hash($userData['password'], PASSWORD_DEFAULT);
+    $arr[] = $userData['age'];
+    $arr[] = $userData['sex'];
 
     try {
       $stmt = connect()->prepare($sql);
@@ -114,5 +116,30 @@ class UserLogic
   {
     $_SESSION = array();
     session_destroy();
+  }
+  public function setageName($age)
+  {
+    if ($age === '1') {
+      return '10代';
+    } elseif ($age === '2') {
+      return '20代';
+    } elseif ($age === '3') {
+      return '30代';
+    } elseif ($age === '4') {
+      return '40代';
+    } elseif ($age === '5') {
+      return '50代';
+    } elseif ($age === '6') {
+      return '60代以上';
+    }
+  }
+
+  public function setsexName($sex)
+  {
+    if ($sex === '1') {
+      return '男性';
+    } elseif ($sex === '2') {
+      return '女性';
+    }
   }
 }

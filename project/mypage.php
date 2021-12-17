@@ -3,6 +3,7 @@ session_start();
 require_once './login/classes/UserLogic.php';
 require_once './login/functions.php';
 
+$UserLogic = new UserLogic();
 //　ログインしているか判定し、していなかったら新規登録画面へ返す
 $result = UserLogic::checkLogin();
 
@@ -58,9 +59,9 @@ $login_user = $_SESSION['login_user'];
             <p class="acount-data-text-intro">よろしくお願いします</p><!-- /.acount-data-text-intro -->
             <ul class="acount-data-text-details">
               <li class="title">Age</li><!-- /.age -->
-              <li class="title">Good</li><!-- /.good -->
-              <li class="age">21</li>
-              <li class="good">30</li><!-- /.good -->
+              <li class="title">Gender</li><!-- /.good -->
+              <li class="age"><?php echo h($UserLogic->setageName($login_user['age'])) ?></li>
+              <li class="good"><?php echo h($UserLogic->setsexName($login_user['sex'])) ?></li><!-- /.good -->
             </ul><!-- /.acount-data-text-detail -->
           </div><!-- /.acount-data-text -->
         </div><!-- /.acount-data -->
@@ -76,16 +77,10 @@ $login_user = $_SESSION['login_user'];
           </ul><!-- /.acount-data-text-favorite -->
         </div><!-- /.acount-favorite -->
       </div><!-- /.left-container -->
-      <div class="right-container">
-        <div class="acount-data">
-
-        </div><!-- /.acount-data -->
-      </div><!-- /.right-container -->
     </div><!-- /.acount-inner -->
-
   </section><!-- /.my-page-wrapper -->
-  <form class="logout-form" action="./logout.php" method="POST">
-    <input type="submit" name="logout" value="ログアウトする" />
+  <form class="logout-form" action="./login/logout.php" method="POST">
+    <button class="logout-btn" type="submit" name="logout">ログアウト</button>
   </form>
   <script text="javascript" src="src/js/script.js"></script>
 </body>

@@ -63,18 +63,18 @@ unset($_SESSION['login_err']);
       </div><!-- /.form-item -->
       <div class="form-item radio">
         <label class="label" for="name">性別</label>
-        <input class="radio-btn" id="radio-a" type="radio" name="gender" value="男性" /><label class="gender-label" for="radio-a">男性</label>
-        <input class="radio-btn" id="radio-b" type="radio" name="gender" value="女性" /><label class="gender-label" for="radio-b">女性</label><br />
+        <input class="radio-btn" id="radio-a" type="radio" name="sex" value="1" /><label class="gender-label" for="radio-a">男性</label>
+        <input class="radio-btn" id="radio-b" type="radio" name="sex" value="2" /><label class="gender-label" for="radio-b">女性</label><br />
       </div>
       <div class="form-item">
         <label class="label" for="pull-down">年代</label>
-        <select class="pull-down" name="pull-down" id="pull-down" placeholder="年代">
-          <option value="10years">10代</option>
-          <option value="20years">20代</option>
-          <option value="30years">30代</option>
-          <option value="40years">40代</option>
-          <option value="50years">50代</option>
-          <option value="60years">60代以上</option>
+        <select class="pull-down" name="age" id="pull-down" placeholder="年代">
+          <option value="1">10代</option>
+          <option value="2">20代</option>
+          <option value="3">30代</option>
+          <option value="4">40代</option>
+          <option value="5">50代</option>
+          <option value="6">60代以上</option>
         </select><!-- /# -->
       </div>
       <!-- /.form-item -->

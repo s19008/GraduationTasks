@@ -100,10 +100,10 @@ function insert()
     <section class="room">
         <div class="room-detail">
             <h3 class="room-detail-title"><?php echo $result['title'] ?></h3>
-            <p class="room-detail-date">投稿日時:<?php echo $result['post_at'] ?></p>
-            <p class="room-detail-category">カテゴリー:<?php echo $blog->setCategoryName($result['category']) ?></p>
-            <p class="room-detail-content">本文:<?php echo $result['content'] ?></p>
-            <p class="room-detail-age">年代:<?php echo $blog->setageName($result['age']) ?></p>
+            <p class="room-detail-category"><?php echo $blog->setCategoryName($result['category']) ?></p>
+            <p class="room-detail-age"><?php echo $blog->setageName($result['age']) ?></p>
+            <p class="room-detail-content">詳細：<?php echo $result['content'] ?></p>
+            <p class="room-detail-date"><?php echo $result['post_at'] ?></p>
         </div><!-- /.room-detail -->
         <div class="room-chat">
             <div class="room-chat-content">

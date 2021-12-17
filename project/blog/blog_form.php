@@ -30,7 +30,7 @@
           <option value="5">ゲーム</option>
           <option value="6">カラオケ</option>
         </select>
-        <p>年代</p>
+        <p class="room-category">年代</p>
         <select class="age-select" name="age">
           <option value="1">10代</option>
           <option value="2">20代</option>

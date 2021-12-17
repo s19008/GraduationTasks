@@ -3,12 +3,12 @@
     height: 100vh;
     background-color: #ddd;
     .acount-inner {
-        max-width: 950px;
+        max-width: 600px;
         width: 100%;
         margin: 0 auto;
         padding-top: 150px;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         .left-container {
             max-width: 300px;
@@ -19,13 +19,6 @@
         }
         .middle-container {
             max-width: 250px;
-            width: 100%;
-            margin: 20px 15px;
-            display: flex;
-            flex-direction: column;
-        }
-        .right-container {
-            max-width: 300px;
             width: 100%;
             margin: 20px 15px;
             display: flex;
@@ -114,9 +107,10 @@
 .logout-form {
     background-color: #ddd;
     text-align: center;
-    input {
-        margin-right: 20px;
-    }
-    a {
+    .logout-btn {
+        color: #fff;
+        padding: 5px 15px;
+        background-color: #777;
+        border-radius: 5px;
     }
 }

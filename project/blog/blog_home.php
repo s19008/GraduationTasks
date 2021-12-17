@@ -56,13 +56,26 @@ function h($s)
     </header>
     <!-- /.header -->
     <section class="post">
-        <h2 class="post-title">話題のチャットルーム一覧</h2>
+        <h2 class="post-title">チャットルーム一覧</h2>
         <div class="post-btn"><a href="./blog_form.php">新規作成</a></div><!-- /.post-btn -->
         <div class="post-inner">
             <?php foreach ($blogData as $column) : ?>
                 <a class="post-inner-contents" href="detail.php?id=<?php echo $column['id'] ?>">
                     <div class="post-inner-contents-visual">
-                        <img src="../src/image/create-gc4989cf33_1920.jpg" alt="イメージ画像">
+                        <?php if ($column["category"] == 1) : ?>
+                            <img src="../src/image/サッカー.jpg" alt="イメージ画像">
+                        <?php elseif ($column['category'] == 2) : ?>
+                            <img src="../src/image/ボウリング.jpg" alt="イメージ画像">
+                        <?php elseif ($column['category'] == 3) : ?>
+                            <img src="../src/image/野球.jpg" alt="イメージ画像">
+                        <?php elseif ($column['category'] == 4) : ?>
+                            <img src="../src/image/テニス.jpg" alt="イメージ画像">
+                        <?php elseif ($column['category'] == 5) : ?>
+                            <img src="../src/image/ゲーム.jpg" alt="イメージ画像">
+                        <?php elseif ($column['category'] == 6) : ?>
+                            <img src="../src/image/カラオケ.jpg" alt="イメージ画像">
+                        <?php else : ?>
+                        <?php endif; ?>
                     </div><!-- /.post-inner-contents-visual -->
                     <div class="post-inner-contents-text">
                         <h2 class="post-inner-contents-text-title"><?php echo h($column['title']) ?></h2>
